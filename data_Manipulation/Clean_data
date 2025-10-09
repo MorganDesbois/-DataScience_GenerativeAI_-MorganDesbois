@@ -1,1 +1,53 @@
+# Import libraries
+import pandas as pd
+import os
 
+# 1️⃣ Create Clean_Data folder
+os.makedirs("Clean_Data", exist_ok=True)
+
+# 2️⃣ List files in Raw_Data
+raw_files = os.listdir("Raw_Data")
+print("Files in Raw_Data:", raw_files)
+
+# 3️⃣ Select the first CSV from Raw_Data
+raw_csv = [f for f in raw_files if f.endswith(".csv")][0]
+raw_path = os.path.join("Raw_Data", raw_csv)
+
+# 4️⃣ Read the raw CSV
+df = pd.read_csv(raw_path, index_col=0, parse_dates=True)
+print("Preview of raw data:")
+display(df.head())
+
+# 5️⃣ Basic cleaning
+# - Remove rows where 'Close' is missing
+df = df.dropna(subset=['Close'])
+
+# - Remove columns that are completely empty
+df = df.dropna(axis=1, how='all')
+
+# - Remove unnecessary columns
+for col in ['Dividends', 'Stock Splits', 'Capital Gains']:
+    if col in df.columns:
+        df = df.drop(columns=[col])
+
+# - Ensure numeric columns are float
+for col in ['Open', 'High', 'Low', 'Close', 'Volume']:
+    if col in df.columns:
+        df[col] = df[col].astype(float)
+
+# - Reorder columns in a logical order
+columns_order = ['Open', 'High', 'Low', 'Close', 'Volume']
+df = df[[col for col in columns_order if col in df.columns]]
+
+# 6️⃣ Save cleaned CSV in Clean_Data
+clean_csv = f"Clean_Data/cleaned_{raw_csv}"
+df.to_csv(clean_csv)
+
+# 7️⃣ Check that Clean_Data folder and CSV exist
+print("\nFiles in Clean_Data folder:")
+clean_files = os.listdir("Clean_Data")
+print(clean_files)
+
+# 8️⃣ Display last 5 rows of cleaned data
+print("\nPreview of cleaned data:")
+display(df.tail())
