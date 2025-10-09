@@ -1,11 +1,18 @@
-pip install yfinance
-
 import yfinance as yf
 import pandas as pd
+import os
+
+
+os.makedirs("../data/Raw_Data", exist_ok=True)
 
 gold = yf.Ticker("GLD")
-data = gold.history(period="5y")  # ou start="2015-01-01", end="2025-12-31"
+data = gold.history(period="5y")  # tu peux aussi mettre start/end
+
+
 print(data.head())
 
+
 data.to_csv("../data/Raw_Data/gold_prices_yfinance.csv")
+print("CSV créé dans ../data/Raw_Data/gold_prices_yfinance.csv")
+
 
