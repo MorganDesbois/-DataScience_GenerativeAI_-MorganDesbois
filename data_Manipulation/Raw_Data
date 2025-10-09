@@ -1,32 +1,33 @@
 import yfinance as yf
 import pandas as pd
-import os
 from datetime import datetime
+import os
 
-# 1️⃣ Créer le dossier Raw_Data s'il n'existe pas
-os.makedirs("data/Raw_Data", exist_ok=True)
+# 1️⃣ Ensure Raw_Data folder exists
+os.makedirs("Raw_Data", exist_ok=True)
 
-# 2️⃣ Télécharger les données historiques de l'or (GLD ETF)
+# 2️⃣ Download historical gold data (GLD ETF)
 gold = yf.Ticker("GLD")
 
-# Période : 2015-01-01 à aujourd'hui
+# Period: 2015-01-01 to today
 start_date = "2015-01-01"
 end_date = datetime.today().strftime('%Y-%m-%d')
 data = gold.history(start=start_date, end=end_date)
 
-# 3️⃣ Vérifier que les données existent
+# 3️⃣ Check if data was downloaded
 if data.empty:
-    print("Aucune donnée téléchargée ! Vérifie la connexion internet ou le ticker.")
+    print("No data downloaded! Check your internet connection or the ticker symbol.")
 else:
-    # 4️⃣ Afficher le tableau
-    print("Aperçu des données :")
-    print(data.head())  # affiche les 5 premières lignes
-    print(f"Total rows: {len(data)}")  # nombre de lignes téléchargées
+    # 4️⃣ Display a preview of the data
+    print("Preview of the data:")
+    print(data.head())  # first 5 rows
+    print(f"Total rows downloaded: {len(data)}")
 
-    # 5️⃣ Sauvegarder en CSV dans Raw_Data
-    csv_path = f"data/Raw_Data/gold_prices_2015_{end_date}.csv"
+    # 5️⃣ Save CSV in Raw_Data folder
+    csv_path = f"Raw_Data/gold_prices_2015_{end_date}.csv"
     data.to_csv(csv_path)
-    print(f"CSV créé ici : {os.path.abspath(csv_path)}")
+    print(f"CSV created at: {os.path.abspath(csv_path)}")
+
 
 
 
