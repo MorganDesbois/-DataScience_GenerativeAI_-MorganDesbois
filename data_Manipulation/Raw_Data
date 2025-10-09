@@ -1,15 +1,18 @@
 import yfinance as yf
 import pandas as pd
 import os
+from datetime import datetime
 
-# 1️⃣ Créer le dossier Raw_Data si inexistant
+# 1️⃣ Créer le dossier Raw_Data s'il n'existe pas
 os.makedirs("data/Raw_Data", exist_ok=True)
 
 # 2️⃣ Télécharger les données historiques de l'or (GLD ETF)
 gold = yf.Ticker("GLD")
 
-# Période 2015-01-01 à 2025-12-31
-data = gold.history(start="2015-01-01", end="2025-12-31")
+# Période : 2015-01-01 à aujourd'hui
+start_date = "2015-01-01"
+end_date = datetime.today().strftime('%Y-%m-%d')
+data = gold.history(start=start_date, end=end_date)
 
 # 3️⃣ Vérifier que les données existent
 if data.empty:
@@ -21,7 +24,7 @@ else:
     print(f"Total rows: {len(data)}")  # nombre de lignes téléchargées
 
     # 5️⃣ Sauvegarder en CSV dans Raw_Data
-    csv_path = "data/Raw_Data/gold_prices_2015_2025.csv"
+    csv_path = f"data/Raw_Data/gold_prices_2015_{end_date}.csv"
     data.to_csv(csv_path)
     print(f"CSV créé ici : {os.path.abspath(csv_path)}")
 
