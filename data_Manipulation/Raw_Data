@@ -1,4 +1,11 @@
-    gold_prices_2020_2025.csv
-    gold_futures.csv
-    macro_indicators.json
+pip install yfinance
+
+import yfinance as yf
+import pandas as pd
+
+gold = yf.Ticker("GLD")
+data = gold.history(period="5y")  # ou start="2015-01-01", end="2025-12-31"
+print(data.head())
+
+data.to_csv("../data/Raw_Data/gold_prices_yfinance.csv")
 
