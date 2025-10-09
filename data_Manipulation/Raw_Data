@@ -1,32 +1,39 @@
+# Import libraries
 import yfinance as yf
 import pandas as pd
 from datetime import datetime
 import os
 
-# 1️⃣ Ensure Raw_Data folder exists
+# 1️⃣ Create Raw_Data folder in Colab
 os.makedirs("Raw_Data", exist_ok=True)
 
 # 2️⃣ Download historical gold data (GLD ETF)
 gold = yf.Ticker("GLD")
 
-# Period: 2015-01-01 to today
+# Set period: 2015-01-01 to today
 start_date = "2015-01-01"
 end_date = datetime.today().strftime('%Y-%m-%d')
 data = gold.history(start=start_date, end=end_date)
 
-# 3️⃣ Check if data was downloaded
+# 3️⃣ Check if data exists
 if data.empty:
-    print("No data downloaded! Check your internet connection or the ticker symbol.")
+    print("No data downloaded! Check your internet connection or ticker symbol.")
 else:
-    # 4️⃣ Display a preview of the data
+    # 4️⃣ Display preview in Colab
     print("Preview of the data:")
-    print(data.head())  # first 5 rows
+    display(data.head())  # display() works nicely in Colab
+
     print(f"Total rows downloaded: {len(data)}")
 
     # 5️⃣ Save CSV in Raw_Data folder
-    csv_path = f"Raw_Data/gold_prices_2015_{end_date}.csv"
+    csv_filename = f"gold_prices_2015_{end_date}.csv"
+    csv_path = os.path.join("Raw_Data", csv_filename)
     data.to_csv(csv_path)
-    print(f"CSV created at: {os.path.abspath(csv_path)}")
+    print(f"CSV created at: {csv_path}")
+
+    # 6️⃣ List files in Raw_Data
+    print("\nFiles in Raw_Data folder:")
+    print(os.listdir("Raw_Data"))
 
 
 
