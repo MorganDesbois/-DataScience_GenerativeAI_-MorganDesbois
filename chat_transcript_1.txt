@@ -2,8 +2,12 @@
 ## 1. Initial Prompt:
 
 Hello, I would like your help with the creation of a GitHub for an assessment
+
 I want you to be clear and detailed, and explain the reasoning or steps behind each part.
-My objectives is: create a data science tools allowing me to identify investment opportunities on gold with breakout of supports and resistances                                                                                        My constraints are: No major contracts, I have to document my work and include in my work this discussion.                                                                                                                                                             Instructions from the module leader: "2.3 Individual Assignment (post-module)
+My objectives is: create a data science tools allowing me to identify investment opportunities on gold with breakout of supports and resistances                                                                                       
+
+My constraints are: No major contracts, I have to document my work and include in my work this discussion.                                                                                                                                                             
+Instructions from the module leader: "2.3 Individual Assignment (post-module)
 • Over the course of the module you will be asked to build up a
 GitHub repository of the work you do. This will be part of the
 assessment, but also acts as an online portfolio of your work.
@@ -14,4 +18,5 @@ also be asked to reflect on how these methods will impact your
 future career.
 • There will be an additional question relating to a topic in data
 science and AI (standard format)"                        
+
 The final result should be an algo that can identify supports and resistances, take position on gold, close the position, create a panel, use protection against loss, take profit level.
