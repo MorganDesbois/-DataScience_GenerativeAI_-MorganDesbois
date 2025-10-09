@@ -1,8 +1,6 @@
-# AI Prompts for My Project
 
-This file contains the prompts used to guide the AI for this project.
+## 1. Initial Prompt:
 
-## 1. Initial Prompt 
 Hello, I would like your help with the creation of a GitHub for an assessment
 I want you to be clear and detailed, and explain the reasoning or steps behind each part.
 My objectives is: create a data science tools allowing me to identify investment opportunities on gold with breakout of supports and resistances                                                                                        My constraints are: No major contracts, I have to document my work and include in my work this discussion.                                                                                                                                                             Instructions from the module leader: "2.3 Individual Assignment (post-module)
