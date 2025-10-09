@@ -1,5 +1,5 @@
 
-## 1. Initial Prompt: ##
+## 1. Introduction Prompt: ##
 
 Hello, I would like your help with the creation of a GitHub for an assessment
 
@@ -29,3 +29,20 @@ The final result should be an algo that can identify supports and resistances, t
 
 Please create a clear and detailed repository structure including the main directories (for example: src, docs, data, tests), important files (for example: README.md, .gitignore, LICENSE), suggested subfolders for each main directory, and a short description of the purpose of each folder and file.
 Format the output as a tree-like structure so I can easily follow it. Also, explain why you recommend this structure and how it will help me manage my project efficiently.
+
+
+
+
+## 3. Starter Scripts ##
+I would like your help to create the starter scripts for my project.
+
+Please provide Python scripts with a basic structure to start analyzing gold prices and identifying supports and resistances. Include:
+- Importing necessary libraries (pandas, numpy, matplotlib, etc.)
+- Placeholder for loading data
+- Placeholder for calculating supports and resistances
+- Placeholder for trading logic (entering/exiting positions, take profit, stop loss)
+- Basic plotting functions for visualization
+- Clear comments explaining each step and TODOs for future additions
+
+Also, provide a minimal folder structure for the scripts and data, so that the project is ready to be expanded.
+Format the output clearly, so I can copy-paste the code and start developi
