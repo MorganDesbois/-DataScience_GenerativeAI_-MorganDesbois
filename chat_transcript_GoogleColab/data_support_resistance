@@ -1,5 +1,5 @@
 
 ##1##
 I want to download historical gold price data from January 1, 2015, up to today using the yfinance library.
-The goal is to develop a support and resistance breakout trading strategy.
+The goal is to develop a MA trading strategie
 I need a clean table (DataFrame) that includes columns such as Date, Open, High, Low, Close, Volume, and any other features necessary to design and test this algorithm.
