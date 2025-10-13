@@ -20,7 +20,7 @@ future career.
 • There will be an additional question relating to a topic in data
 science and AI (standard format)"                        
 
-The final result should be an algo that can identify supports and resistances, take position on gold, close the position, create a panel, use protection against loss, take profit level.
+The final result should be an algo that can take position on gold, close the position, create a panel, use protection against loss, take profit level.
 
 
 
@@ -36,10 +36,10 @@ Format the output as a tree-like structure so I can easily follow it. Also, expl
 ## 3. Starter Scripts ##
 I would like your help to create the starter scripts for my project.
 
-Please provide Python scripts with a basic structure to start analyzing gold prices and identifying supports and resistances. Include:
+Please provide Python scripts with a basic structure to start analyzing gold prices and identifying signals. Include:
 - Importing necessary libraries (pandas, numpy, matplotlib, etc.)
 - Placeholder for loading data
-- Placeholder for calculating supports and resistances
+- Placeholder for calculating signals
 - Placeholder for trading logic (entering/exiting positions, take profit, stop loss)
 - Basic plotting functions for visualization
 - Clear comments explaining each step and TODOs for future additions
