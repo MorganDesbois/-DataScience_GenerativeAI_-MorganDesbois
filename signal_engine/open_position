@@ -1,1 +1,5 @@
+# Generate Buy signals based on Crossover_Signal
+gold_data['Buy_Signal'] = (gold_data['Crossover_Signal'] == 1).astype(int)
 
+# Generate Sell signals based on Crossover_Signal
+gold_data['Sell_Signal'] = (gold_data['Crossover_Signal'] == -1).astype(int) * -1
