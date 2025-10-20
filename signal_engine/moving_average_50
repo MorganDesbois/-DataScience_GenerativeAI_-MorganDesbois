@@ -1,1 +1,25 @@
+# Moving Average 50 days #
 
+import yfinance as yf
+import pandas as pd
+from datetime import date
+
+# Define the ticker for gold (GC=F is a common ticker for Gold Futures)
+# You might need to verify the correct ticker depending on the data source you prefer
+ticker_symbol = "GC=F"
+
+# Define the start and end dates
+start_date = "2015-01-01"
+end_date = date.today().strftime("%Y-%m-%d")
+
+# Download the data
+gold_data = yf.download(ticker_symbol, start=start_date, end=end_date)
+
+# Reset index to make Date a column
+gold_data = gold_data.reset_index()
+
+# Calculate the 50-day moving average of the 'Close' price
+gold_data['50_day_MA'] = gold_data['Close'].rolling(window=50).mean()
+
+# Display the DataFrame with the new moving average column
+display(gold_data.head(60))
