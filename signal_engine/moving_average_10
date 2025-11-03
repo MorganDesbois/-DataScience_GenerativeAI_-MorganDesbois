@@ -1,25 +1,24 @@
-# Moving Average 10 days #
+# Moving Average 10 days 
+In this code, the objective is to create the first 10-day moving average using "clean data"
 
-import yfinance as yf
+
 import pandas as pd
-from datetime import date
+import os
 
-# Define the ticker for gold (GC=F is a common ticker for Gold Futures)
-# You might need to verify the correct ticker depending on the data source you prefer
-ticker_symbol = "GC=F"
+## Read cleaned CSV from Clean_Data
+clean_files = os.listdir("Clean_Data")
+clean_csv = [f for f in clean_files if f.endswith(".csv")][0]
+clean_path = os.path.join("Clean_Data", clean_csv)
+gold_data = pd.read_csv(clean_path, index_col=0, parse_dates=True)
 
-# Define the start and end dates
-start_date = "2015-01-01"
-end_date = date.today().strftime("%Y-%m-%d")
-
-# Download the data
-gold_data = yf.download(ticker_symbol, start=start_date, end=end_date)
-
-# Reset index to make Date a column
+## Reset index to make Date a column
 gold_data = gold_data.reset_index()
 
-# Calculate the 10-day moving average of the 'Close' price
+## Calculate 10-day moving average of 'Close' price
 gold_data['10_day_MA'] = gold_data['Close'].rolling(window=10).mean()
 
-# Display the DataFrame with the new moving average column
+##  Display first 15 rows with new column
 display(gold_data.head(15))
+
+
+**This code uses the cleaned gold price data from Clean_Data and calculates a 10-day moving average of the closing prices. It adds this as a new column, allowing us to detect potential buy/sell signals**
