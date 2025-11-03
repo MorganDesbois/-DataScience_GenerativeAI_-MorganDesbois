@@ -2,9 +2,6 @@
 In this code, the objective is to create the first 10-day moving average using "clean data"
 
 
-import pandas as pd
-import os
-
 ## Read cleaned CSV from Clean_Data
 clean_files = os.listdir("Clean_Data")
 clean_csv = [f for f in clean_files if f.endswith(".csv")][0]
