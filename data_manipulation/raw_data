@@ -1,39 +1,46 @@
-# Import libraries
+# Raw data 
+This is the first step of our algorithm, it involves retrieving the data via Yfinance and recording it.
+
+
+
 import yfinance as yf
 import pandas as pd
 from datetime import datetime
 import os
 
-# 1️⃣ Create Raw_Data folder in Colab
+## Create Raw_Data folder in Colab
 os.makedirs("Raw_Data", exist_ok=True)
 
-# 2️⃣ Download historical gold data (GLD ETF)
+## Download historical gold data (GLD ETF)
 gold = yf.Ticker("GLD")
 
-# Set period: 2015-01-01 to today
+## Set period: 2015-01-01 to today
 start_date = "2015-01-01"
 end_date = datetime.today().strftime('%Y-%m-%d')
 data = gold.history(start=start_date, end=end_date)
 
-# 3️⃣ Check if data exists
+##Check if data exists
 if data.empty:
     print("No data downloaded! Check your internet connection or ticker symbol.")
 else:
-    # 4️⃣ Display preview in Colab
+    ### Display preview in Colab
     print("Preview of the data:")
     display(data.head())  # display() works nicely in Colab
 
     print(f"Total rows downloaded: {len(data)}")
 
-    # 5️⃣ Save CSV in Raw_Data folder
+    ## Save CSV in Raw_Data folder
     csv_filename = f"gold_prices_2015_{end_date}.csv"
     csv_path = os.path.join("Raw_Data", csv_filename)
     data.to_csv(csv_path)
     print(f"CSV created at: {csv_path}")
 
-    # 6️⃣ List files in Raw_Data
+    ## List files in Raw_Data
     print("\nFiles in Raw_Data folder:")
     print(os.listdir("Raw_Data"))
+
+
+**This code downloads historical daily price data for the GLD gold ETF from January 1, 2015, to today using Yahoo Finance. It saves the data as a CSV file in a local “Raw_Data” folder and provides a preview along with the total number of rows downloaded.**
 
 
 
