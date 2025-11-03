@@ -1,5 +1,5 @@
 # Open position
-Using the new column with (1,-1,0), the goal is to generate a new column to generate some buy/sell postions.
+Using the new column with created in #signal_ma_cross, the goal is to generate a new column for buy/sell postions.
 
 
 ## Generate Buy signals based on Crossover_Signal
