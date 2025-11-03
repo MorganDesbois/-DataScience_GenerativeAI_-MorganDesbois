@@ -3,7 +3,6 @@ In this section, we take the raw data for the gold ticker and check for errors o
 
 
 
-
 import pandas as pd
 import os
 
@@ -55,3 +54,6 @@ print(clean_files)
 ## Display last 5 rows of cleaned data
 print("\nPreview of cleaned data:")
 display(df.tail())
+
+
+**The data is clean and organized into different columns; it is ready to be used.**
