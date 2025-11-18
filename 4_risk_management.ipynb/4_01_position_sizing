@@ -1,1 +1,8 @@
+# We choose how big each trade should be so the system never risks too much at once. A simple fixed size or a small percentage of the account keeps risk stable.
+
+
+
+
+
+** This helps the strategy stay safe and avoid oversized trades **
 
