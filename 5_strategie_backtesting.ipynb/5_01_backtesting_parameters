@@ -1,1 +1,7 @@
+# We set the rules for testing our EA on past data, like time period, pairs, stop loss, and lot size
 
+
+
+
+
+** Helps check the strategy safely before live trading **
