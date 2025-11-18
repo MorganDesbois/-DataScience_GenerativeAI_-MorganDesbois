@@ -1,1 +1,7 @@
+# For additional protection, we set a limit on how much the account can lose before the system stops trading. If this limit is reached, trading pauses
 
+
+
+
+
+** This rule prevents large losses and protects the account from big drawdown **
