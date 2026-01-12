@@ -1,8 +1,8 @@
 # We choose how big each trade should be so the system never risks too much at once. A simple fixed size or a small percentage of the account keeps risk stable.
 
-
-
-
+# Calculate how many units to trade
+risk_amount = account_balance * risk_per_trade
+position_size = risk_amount / (entry_price - stop_loss_price)
 
 ** This helps the strategy stay safe and avoid oversized trades **
 
