@@ -1,6 +1,23 @@
 # We set the rules for testing our EA on past data, like time period, pairs, stop loss, and lot size
 
+# Backtest Parameters for Gold MA Crossover Strategy
 
+symbol = "XAU/USD"           # Trading instrument
+timeframe = "1h"             # Data timeframe (1-hour)
+start_date = "2023-01-01"    # Backtest start
+end_date = "2025-12-31"      # Backtest end
+
+short_ma_period = 10         # Short moving average
+long_ma_period = 50          # Long moving average
+
+# Entry rules
+# Buy when short MA crosses above long MA
+# Sell when short MA crosses below long MA
+
+# Risk management
+max_drawdown_pct = 0.10      # Max drawdown 10%
+trailing_stop_pct = 0.005    # 0.5% trailing stop
+risk_per_trade = 0.02        # 2% risk per trade
 
 
 
