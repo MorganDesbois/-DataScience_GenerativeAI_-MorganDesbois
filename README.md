@@ -2,7 +2,7 @@
 ### Main Project: Investment gold strategie
 
 **Context:** 
-In the face of geopolitical tensions and market uncertainty, gold is often considered a safe-haven asset and protection against crisis. This project studies how breakout signals of supports and resistances in gold prices can be detected and used to profit of the actual economy and geopolitical context. 
+In the face of geopolitical tensions and market uncertainty, gold is often considered a safe-haven asset and protection against crisis. This project studies how moving average can be dused to profit of the actual economy and geopolitical context. 
 
 **Why gold ?**
 
@@ -20,11 +20,11 @@ In the face of geopolitical tensions and market uncertainty, gold is often consi
 
 -Collect and **prepare gold market time series**, spot and future prices.
 
--**Build and compare a simple breakout system**  and a ML-assisted version to filter false signals.
+-**Build and compare a simple MA system**  and a ML-assisted version to filter false signals.
 
--Implement out-of-sample backtests to evaluate robustness by **conducting a backtest**
+-**Implement backtests and performance metrics** to evaluate robustness by.
 
--**Document the use of a GenAI** tool to generate code, explain methodological choices, and write analyses.
+-**Discover new AI **  to generate code, explain methodological choices, and write analyses.
 
 
 
