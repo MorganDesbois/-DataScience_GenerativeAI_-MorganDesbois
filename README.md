@@ -31,17 +31,17 @@ In the face of geopolitical tensions and market uncertainty, gold is often consi
 
 
 #### Assignment 1 – Data Manipulation & Exploration
-- [2_01_data_and_feature_engineering_in_pandas_COMPLETED](./2_01_data_and_feature_engineering_in_pandas_COMPLETED.ipynb) – Data and feature engineering in Pandas
-- [2_02_Joining_DataFrames_COMPLETED](./2_02_Joining_DataFrames_COMPLETED.ipynb) – Joining DataFrames
-- [2_03_Calculated_Fields,_Indexing_and_Subsetting_COMPLETED](./2_03_Calculated_Fields,_Indexing_and_Subsetting_COMPLETED.ipynb) – Calculated fields, indexing, and subsetting
-- [2_04_Transforms_and_Concatenation_COMPLETED](./2_04_Transforms_and_Concatenation_COMPLETED.ipynb) – Data transforms and concatenation
-- [2_05_Exploratory_Data_Analysis_COMPLETED](./2_05_Exploratory_Data_Analysis_COMPLETED.ipynb) – Exploratory data analysis
+- [2_01_data_and_feature_engineering_in_pandas_COMPLETED](./Assignment_1/2_01_data_and_feature_engineering_in_pandas_COMPLETED.ipynb) – Data and feature engineering in Pandas
+- [2_02_Joining_DataFrames_COMPLETED](./Assignment_1/2_02_Joining_DataFrames_COMPLETED.ipynb) – Joining DataFrames
+- [2_03_Calculated_Fields,_Indexing_and_Subsetting_COMPLETED](./Assignment_1/2_03_Calculated_Fields,_Indexing_and_Subsetting_COMPLETED.ipynb) – Calculated fields, indexing, and subsetting
+- [2_04_Transforms_and_Concatenation_COMPLETED](./Assignment_1/2_04_Transforms_and_Concatenation_COMPLETED.ipynb) – Data transforms and concatenation
+- [2_05_Exploratory_Data_Analysis_COMPLETED](./Assignment_1/2_05_Exploratory_Data_Analysis_COMPLETED.ipynb) – Exploratory data analysis
 
 #### Assignment 2 – Machine Learning
-- [4_01_Decision_Trees_COMPLETED](./4_01_Decision_Trees_COMPLETED.ipynb) – Decision Trees implementation
+- [4_01_Decision_Trees_COMPLETED](./Assignment_2/4_01_Decision_Trees_COMPLETED.ipynb) – Decision Trees implementation
 
 #### Assignment 3 – Deep Learning
-- [6_02_DNN_101_COMPLETED](./6_02_DNN_101_COMPLETED.ipynb) – Introduction to Deep Neural
+- [6_02_DNN_101_COMPLETED](./Assignment_3/6_02_DNN_101_COMPLETED.ipynb) – Introduction to Deep Neural Networks
 
 #### Individual Assignment – Essay
 - [Part_1](./Individual_Assignment/Part_1.md) – Individual Assignment Part 1
