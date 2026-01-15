@@ -1,8 +1,8 @@
 
-### Main Project: Investment gold strategie
+### Main Project: Investment gold strategy
 
 **Context:** 
-In the face of geopolitical tensions and market uncertainty, gold is often considered a safe-haven asset and protection against crisis. This project studies how moving average can be dused to profit of the actual economy and geopolitical context. 
+In the face of geopolitical tensions and market uncertainty, gold is often considered a safe-haven asset and protection against crisis. This project studies how moving average can be used to profit of the current economy and geopolitical context. 
 
 **Why gold ?**
 
