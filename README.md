@@ -27,7 +27,8 @@ In the face of geopolitical tensions and market uncertainty, gold is often consi
 
 
 
-### Table of Contents 
+### Table of Contents<br><br>
+
 
 #### Assignment 1 – Data Manipulation & Exploration
 - [2_01_data_and_feature_engineering_in_pandas_COMPLETED](./2_01_data_and_feature_engineering_in_pandas_COMPLETED.ipynb) – Data and feature engineering in Pandas
