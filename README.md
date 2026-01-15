@@ -18,7 +18,7 @@ In the face of geopolitical tensions and market uncertainty, gold is often consi
 
 **Objectives:**
 
--Collect and **prepare gold market time series**, spot and future prices.
+-Collect and **prepare gold market time series**.
 
 -**Build and compare a simple MA system**  and a ML-assisted version to filter false signals.
 
