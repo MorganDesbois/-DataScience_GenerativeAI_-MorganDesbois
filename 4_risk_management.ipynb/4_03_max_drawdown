@@ -1,4 +1,5 @@
-# For additional protection, we set a limit on how much the account can lose before the system stops trading. If this limit is reached, trading pauses
+# For additional protection, we set a limit on how much the account can lose before the system stops trading. 
+If this limit is reached, trading pauses
 
 # Closes trades if account equity drops below allowed drawdown
 
