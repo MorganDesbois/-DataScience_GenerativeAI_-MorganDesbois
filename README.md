@@ -52,5 +52,5 @@ In the face of geopolitical tensions and market uncertainty, gold is often consi
 
 
 
-_Educational Note: This project is intended for academic purposes and does not constitute financial advice. Simulations are conducted for study purposes only._
+_Educational Note: This project is intended for academic purposes and does not constitute financial advice. Simulations are conducted for study purposes only._<br>
 _This work is released under the MIT License_
