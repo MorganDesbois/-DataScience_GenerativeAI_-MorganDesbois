@@ -11,8 +11,7 @@ In the face of geopolitical tensions and market uncertainty, gold is often consi
 
 -Strong momentum perfect for breakouts
 
--Accessible assets compared to real institutional tools
-
+-Accessible assets compared to real institutional tools <br><br>
 
 
 ### Objectives
