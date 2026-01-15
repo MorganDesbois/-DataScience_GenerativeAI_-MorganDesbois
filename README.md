@@ -27,7 +27,7 @@ In the face of geopolitical tensions and market uncertainty, gold is often consi
 
 
 
-### Table of Contents<br><br>
+### Table of Contents
 
 
 #### Assignment 1 – Data Manipulation & Exploration
