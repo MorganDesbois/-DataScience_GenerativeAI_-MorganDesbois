@@ -5,7 +5,7 @@
 symbol = "XAU/USD"           # Trading instrument
 timeframe = "1h"             # Data timeframe (1-hour)
 start_date = "2023-01-01"    # Backtest start
-end_date = "2025-12-31"      # Backtest end
+end_date = "2025-12-01"      # Backtest end
 
 short_ma_period = 10         # Short moving average
 long_ma_period = 50          # Long moving average
