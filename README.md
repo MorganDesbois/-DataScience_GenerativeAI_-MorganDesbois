@@ -1,7 +1,7 @@
 
 # Main Project: Investment gold strategy
 
-In the face of geopolitical tensions and market uncertainty, gold is often considered a safe-haven asset and protection against crisis. This project studies how moving averages can be used to identify trading opportunities and potentially profit from the current economic and geopolitical context. It includes data collection from historical gold prices, preprocessing, strategy development with moving average crossovers, backtesting, and risk parameter optimisation. The repository contains all the notebooks, code, and outputs needed to reproduce the analysis.<br><br><br><br>
+In the face of geopolitical tensions and market uncertainty, gold is often considered a safe-haven asset and protection against crisis. This project studies how moving averages can be used to identify trading opportunities and potentially profit from the current economic and geopolitical context. It includes data collection from historical gold prices, preprocessing, strategy development with moving average crossovers, backtesting, and risk parameter optimisation. The repository contains all the notebooks, code, and outputs needed to reproduce the analysis.<br><br><br>
 
 ### Why gold ?
 
@@ -11,7 +11,7 @@ In the face of geopolitical tensions and market uncertainty, gold is often consi
 
 -Strong momentum perfect for breakouts
 
--Accessible assets compared to real institutional tools <br><br><br><br>
+-Accessible assets compared to real institutional tools <br><br><br>
 
 
 ### Objectives
@@ -22,7 +22,7 @@ In the face of geopolitical tensions and market uncertainty, gold is often consi
 
 -**Implement backtests and performance metrics** to evaluate robustness.
 
--**Discover new AI** specially adapted to the finance environment.<br><br><br><br>
+-**Discover new AI** specially adapted to the finance environment.<br><br><br>
 
 
 
@@ -40,7 +40,12 @@ In the face of geopolitical tensions and market uncertainty, gold is often consi
 - [4_01_Decision_Trees_COMPLETED](./4_01_Decision_Trees_COMPLETED.ipynb) – Decision Trees implementation
 
 #### Assignment 3 – Deep Learning
-- [6_02_DNN_101_COMPLETED](./6_02_DNN_101_COMPLETED.ipynb) – Introduction to Deep Neural 
+- [6_02_DNN_101_COMPLETED](./6_02_DNN_101_COMPLETED.ipynb) – Introduction to Deep Neural
+
+#### Individual Assignment – Essay
+- [Part_1](./Individual_Assignment/Part_1.md) – Individual Assignment Part 1
+- [Part_2](./Individual_Assignment/Part_2.md) – Individual Assignment Part 2
+- [References](./Individual_Assignment/References.md) – Reference materials and bibliography<br><br><br>
 
 
 
