@@ -1,7 +1,7 @@
 
 # Main Project: Investment gold strategy
 
-In the face of geopolitical tensions and market uncertainty, gold is often considered a safe-haven asset and protection against crisis. This project studies how moving averages can be used to identify trading opportunities and potentially profit from the current economic and geopolitical context. It includes data collection from historical gold prices, preprocessing, strategy development with moving average crossovers, backtesting, and risk parameter optimisation. The repository contains all the notebooks, code, and outputs needed to reproduce the analysis.
+In the face of geopolitical tensions and market uncertainty, gold is often considered a safe-haven asset and protection against crisis. This project studies how moving averages can be used to identify trading opportunities and potentially profit from the current economic and geopolitical context. It includes data collection from historical gold prices, preprocessing, strategy development with moving average crossovers, backtesting, and risk parameter optimisation. The repository contains all the notebooks, code, and outputs needed to reproduce the analysis.<br>
 _This work is released under the MIT License_<br><br><br>
 
 ### Why gold ?
