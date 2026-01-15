@@ -1,6 +1,6 @@
 # Clean data
-In this section, we take the raw data for the gold ticker and check for errors or missing values. The code then places the data into an array to make it more readable. 
-
+In this section, we take the raw data for the gold ticker and check for errors or missing values.
+The code then places the data into an array to make it more readable. 
 
 
 import pandas as pd
