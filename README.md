@@ -22,9 +22,9 @@ In the face of geopolitical tensions and market uncertainty, gold is often consi
 
 -**Implement backtests and performance metrics** to evaluate robustness.
 
--**Discover new AI** specially adapted to the finance environment.
+-**Discover new AI** specially adapted to the finance environment.<br><br>
 
-<br><br><br><br>
+
 
 
 ### Table of Contents 
