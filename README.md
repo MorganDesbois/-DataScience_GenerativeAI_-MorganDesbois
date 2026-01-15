@@ -22,9 +22,9 @@ In the face of geopolitical tensions and market uncertainty, gold is often consi
 
 -**Build and compare a simple MA system**  and a ML-assisted version to filter false signals.
 
--**Implement backtests and performance metrics** to evaluate robustness by.
+-**Implement backtests and performance metrics** to evaluate robustness.
 
--**Discover new AI** specially adapted for the finance code.
+-**Discover new AI** specially adapted to the finance environment.
 
 
 
