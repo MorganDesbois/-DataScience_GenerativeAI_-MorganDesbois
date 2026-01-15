@@ -3,7 +3,7 @@
 # Backtest Parameters for Gold MA Crossover Strategy
 
 symbol = "XAU/USD"           # Trading instrument
-timeframe = "1h"             # Data timeframe (1-hour)
+timeframe = "1d"             # Data timeframe (1-day)
 start_date = "2023-01-01"    # Backtest start
 end_date = "2025-12-01"      # Backtest end
 
