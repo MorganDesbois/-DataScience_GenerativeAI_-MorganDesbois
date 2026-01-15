@@ -3,7 +3,7 @@
 
 In the face of geopolitical tensions and market uncertainty, gold is often considered a safe-haven asset and protection against crisis. This project studies how moving average can be used to profit of the current economy and geopolitical context. 
 
-# Why gold ?
+### Why gold ?
 
 -High volatility
 
@@ -20,7 +20,7 @@ In the face of geopolitical tensions and market uncertainty, gold is often consi
 
 
 
-# Objectives:
+### Objectives:
 
 -Collect and **prepare gold market time series**.
 
