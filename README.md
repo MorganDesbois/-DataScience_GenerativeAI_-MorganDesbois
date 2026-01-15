@@ -44,9 +44,7 @@ In the face of geopolitical tensions and market uncertainty, gold is often consi
 - [6_02_DNN_101_COMPLETED](./Assignment_3/6_02_DNN_101_COMPLETED.ipynb) – Introduction to Deep Neural Networks
 
 #### Individual Assignment – Essay
-- [Part_1](./Individual_Assignment/Part_1.md) – Individual Assignment Part 1
-- [Part_2](./Individual_Assignment/Part_2.md) – Individual Assignment Part 2
-- [References](./Individual_Assignment/References.md) – Reference materials and bibliography<br><br><br>
+- [Essay](./Individual_Assignment/Essay.md) – Individual Assignment<br><br><br>
 
 
 
