@@ -1,4 +1,4 @@
-# Raw data 
+#Raw data 
 This is the first step of our algorithm, it involves retrieving the data via Yfinance and recording it.
 
 
