@@ -50,5 +50,6 @@ In the face of geopolitical tensions and market uncertainty, gold is often consi
 
 
 
-_This work is released under the MIT License_<br>
+
 _Educational Note: This project is intended for academic purposes and does not constitute financial advice. Simulations are conducted for study purposes only._
+_This work is released under the MIT License_
