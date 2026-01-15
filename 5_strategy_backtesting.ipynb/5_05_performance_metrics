@@ -1,9 +1,9 @@
-# Gold Strategy (Moving Average)
+# Gold Strategy MA
 CAGR 71.14%
 Maximum Drawdown -112.12%
 Sharpe Ratio -0.71
 
-#Optimized Strategy
+# Optimized Strategy
 CAGR 100.22%
 Maximum Drawdown -30.23%
 Sharpe Ratio 2.10
@@ -14,4 +14,10 @@ Maximum Drawdown -143.52%
 Sharpe Ratio -0.84
 
 
-Looking at these numbers, the Optimized Strategy clearly performs better overall. Its CAGR is higher, meaning it grows faster on average each year. The maximum drawdown is much smaller, so the risk of a big loss is lower compared to the Gold Strategy, which had a huge drop. The Sharpe Ratio tells the same story: the Optimized Strategy gives a solid return relative to the risk taken, while the Gold Strategy actually has a negative risk-adjusted return. Overall, the Optimized Strategy is faster growing, safer, and more efficient in terms of risk versus reward
+Looking at these numbers, the Optimized Strategy performs better overall.
+Its CAGR is higher, meaning it grows faster on average each year. The maximum drawdown 
+is much smaller, so the risk of a big loss is lower compared to the Gold Strategy,
+which had a huge drop. The Sharpe Ratio tells the same story, the Optimized Strategy 
+gives a solid return relative to the risk taken, while the Gold Strategy MA actually has 
+a negative risk-adjusted return. Overall, the Optimized Strategy is faster growing, safer,
+and more efficient in terms of risk versus reward
