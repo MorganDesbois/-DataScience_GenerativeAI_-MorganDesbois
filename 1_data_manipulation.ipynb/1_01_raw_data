@@ -1,10 +1,30 @@
-from IPython.display import Markdown, display
-
-
 import yfinance as yf
 import pandas as pd
 from datetime import datetime
 import os
+
+# Affichage Markdown (fonctionne dans Jupyter/Colab, fallback en console)
+end_date = datetime.today().strftime('%Y-%m-%d')
+md_text = f"""
+## Raw Data
+
+Ce bloc télécharge les données historiques du ETF `GLD` via `yfinance` et sauvegarde un fichier CSV dans le dossier `Raw_Data`.
+
+- Ticker : `GLD`
+- Période : `2023-01-01` → '2025-12-01'
+- Dossier de sortie : `Raw_Data/`
+"""
+
+try:
+    from IPython.display import Markdown, display as _display
+    _display(Markdown(md_text))
+except Exception:
+    # fallback simple si on n'est pas dans un notebook
+    print("Raw Data\n")
+    print(md_text)
+
+
+
 
 ## Create Raw_Data folder in Colab
 os.makedirs("Raw_Data", exist_ok=True)
@@ -14,16 +34,18 @@ gold = yf.Ticker("GLD")
 
 ## Set period: 2015-01-01 to today
 start_date = "2015-01-01"
-end_date = datetime.today().strftime('%Y-%m-%d')
 data = gold.history(start=start_date, end=end_date)
 
 ##Check if data exists
 if data.empty:
     print("No data downloaded! Check your internet connection or ticker symbol.")
 else:
-    ### Display preview in Colab
+    ### Display preview in Colab / fallback to console
     print("Preview of the data:")
-    display(data.head())  # display() works nicely in Colab
+    try:
+        _display(data.head())
+    except Exception:
+        print(data.head().to_string())
 
     print(f"Total rows downloaded: {len(data)}")
 
@@ -41,7 +63,7 @@ else:
 **This code downloads historical daily price data for the GLD gold ETF from January 1, 2015, to today using Yahoo Finance. It saves the data as a CSV file in a local “Raw_Data” folder and provides a preview along with the total number of rows downloaded.**
 
 
-display(Markdown(md))
+
 
 
 
