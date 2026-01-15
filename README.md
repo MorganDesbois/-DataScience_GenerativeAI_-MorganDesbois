@@ -16,6 +16,11 @@ In the face of geopolitical tensions and market uncertainty, gold is often consi
 
 
 
+
+
+
+
+
 **Objectives:**
 
 -Collect and **prepare gold market time series**.
