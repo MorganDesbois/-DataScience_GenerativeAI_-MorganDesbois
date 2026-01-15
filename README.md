@@ -24,6 +24,8 @@ In the face of geopolitical tensions and market uncertainty, gold is often consi
 
 -**Discover new AI** specially adapted to the finance environment.
 
+<br><br><br><br>
+
 
 ### Table of Contents 
 
