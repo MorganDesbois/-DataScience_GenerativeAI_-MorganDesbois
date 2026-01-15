@@ -1,63 +1,45 @@
+## Raw Data
+
+Ce bloc télécharge les données historiques du ETF `GLD` via `yfinance` et sauvegarde un fichier CSV dans le dossier `Raw_Data`.
+
+- **Ticker** : `GLD`
+- **Période** : `2015-01-01` → aujourd'hui
+- **Dossier de sortie** : `Raw_Data/`
+
+```python
 import yfinance as yf
 import pandas as pd
 from datetime import datetime
 import os
 
-# Affichage Markdown (fonctionne dans Jupyter/Colab, fallback en console)
-end_date = datetime.today().strftime('%Y-%m-%d')
-md_text = f"""
-## Raw Data
-
-Ce bloc télécharge les données historiques du ETF `GLD` via `yfinance` et sauvegarde un fichier CSV dans le dossier `Raw_Data`.
-
-- Ticker : `GLD`
-- Période : `2023-01-01` → '2025-12-01'
-- Dossier de sortie : `Raw_Data/`
-"""
-
-try:
-    from IPython.display import Markdown, display as _display
-    _display(Markdown(md_text))
-except Exception:
-    # fallback simple si on n'est pas dans un notebook
-    print("Raw Data\n")
-    print(md_text)
-
-
-
-
-## Create Raw_Data folder in Colab
+# Crée le dossier Raw_Data si nécessaire
 os.makedirs("Raw_Data", exist_ok=True)
 
-## Download historical gold data (GLD ETF)
+# Télécharge les données historiques de GLD
 gold = yf.Ticker("GLD")
-
-## Set period: 2015-01-01 to today
 start_date = "2015-01-01"
+end_date = datetime.today().strftime('%Y-%m-%d')
 data = gold.history(start=start_date, end=end_date)
 
-##Check if data exists
+# Vérifie si les données existent
 if data.empty:
-    print("No data downloaded! Check your internet connection or ticker symbol.")
+    print("Aucune donnée téléchargée ! Vérifiez la connexion internet ou le ticker.")
 else:
-    ### Display preview in Colab / fallback to console
-    print("Preview of the data:")
-    try:
-        _display(data.head())
-    except Exception:
-        print(data.head().to_string())
+    # Affiche un aperçu
+    print("Aperçu des données :")
+    print(data.head().to_string())
+    print(f"Total de lignes téléchargées : {len(data)}")
 
-    print(f"Total rows downloaded: {len(data)}")
-
-    ## Save CSV in Raw_Data folder
+    # Sauvegarde en CSV dans Raw_Data
     csv_filename = f"gold_prices_2015_{end_date}.csv"
     csv_path = os.path.join("Raw_Data", csv_filename)
     data.to_csv(csv_path)
-    print(f"CSV created at: {csv_path}")
+    print(f"CSV créé à : {csv_path}")
 
-    ## List files in Raw_Data
-    print("\nFiles in Raw_Data folder:")
+    # Liste les fichiers dans Raw_Data
+    print("\nFichiers dans le dossier Raw_Data :")
     print(os.listdir("Raw_Data"))
+
 
 
 **This code downloads historical daily price data for the GLD gold ETF from January 1, 2015, to today using Yahoo Finance. It saves the data as a CSV file in a local “Raw_Data” folder and provides a preview along with the total number of rows downloaded.**
