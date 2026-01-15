@@ -1,27 +1,4 @@
 from IPython.display import Markdown, display
-from datetime import datetime
-
-end_date = datetime.today().strftime('%Y-%m-%d')
-
-md = f"""
-# Raw Data
-
-Ce bloc télécharge les données historiques du ETF `GLD` via `yfinance` et sauvegarde un fichier CSV dans le dossier `Raw_Data`.
-
-- Ticker : `GLD`
-- Période : `2015-01-01` → {end_date}
-- Dossier de sortie : `Raw_Data/`
-- Exemple de nom de fichier : `gold_prices_2015_{end_date}.csv`
-
-Description :
-Ce script télécharge les prix quotidiens depuis Yahoo Finance, affiche un aperçu (head) et enregistre les données brutes dans un CSV pour traitement ultérieur.
-"""
-display(Markdown(md))
-
-
-##Raw data##
-This is the first step of our algorithm, it involves retrieving the data via Yfinance and recording it.
-
 
 
 import yfinance as yf
