@@ -1,5 +1,5 @@
 # For additional protection, we set a limit on how much the account can lose before the system stops trading. 
-If this limit is reached, trading pauses
+# If this limit is reached, trading pauses
 
 # Closes trades if account equity drops below allowed drawdown
 
@@ -10,4 +10,4 @@ if current_account_balance <= max_drawdown_level:
     close_all_positions()
 
 
-** This rule prevents large losses and protects the account from big drawdown **
+# This rule prevents large losses and protects the account from big drawdown 
