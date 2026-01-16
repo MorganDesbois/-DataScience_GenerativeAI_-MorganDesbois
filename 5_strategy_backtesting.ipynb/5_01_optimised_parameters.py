@@ -1,7 +1,7 @@
-In this section, we aim to optimise the parameters of the MA crossover strategy for the XAU/USD instrument.  
-The goal is to find short and long moving average periods that maximize historical performance while respecting risk management rules.
+# In this section, we aim to optimise the parameters of the MA crossover strategy for the XAU/USD instrument.  
+# The goal is to find short and long moving average periods that maximize historical performance while respecting risk management rules.
 
-We test several combinations of parameters to determine the values best suited for our backtest.
+# We test several combinations of parameters to determine the values best suited for our backtest.
 
 
 
@@ -38,7 +38,7 @@ for param, value in best_params.items():
 
 
 
-### RESULTS
+# RESULTS
 
 optimised_parameters = {
     "short_ma_period": 10,      # Fixed
