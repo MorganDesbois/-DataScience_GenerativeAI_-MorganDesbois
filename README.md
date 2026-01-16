@@ -41,10 +41,7 @@ In the face of geopolitical tensions and market uncertainty, gold is often consi
 - [4_01_Decision_Trees_COMPLETED](./Assignment_2/4_01_Decision_Trees_COMPLETED.ipynb) – Decision Trees implementation
 
 #### Assignment 3 – Deep Learning
-- [6_02_DNN_101_COMPLETED](./Assignment_3/6_02_DNN_101_COMPLETED.ipynb) – Introduction to Deep Neural Networks
-
-#### Individual Assignment – Essay
-- [Essay](./Individual_Assignment/Essay.md) – Individual Assignment<br><br><br>
+- [6_02_DNN_101_COMPLETED](./Assignment_3/6_02_DNN_101_COMPLETED.ipynb) – Introduction to Deep Neural Networks <br><br><br>
 
 
 
