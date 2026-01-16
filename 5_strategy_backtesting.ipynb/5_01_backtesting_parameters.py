@@ -20,5 +20,4 @@ trailing_stop_pct = 0.005    # 0.5% trailing stop
 risk_per_trade = 0.02        # 2% risk per trade
 
 
-
-** Helps check the strategy safely before live trading **
+# Helps check the strategy safely before live trading 
