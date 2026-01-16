@@ -1,9 +1,9 @@
-**This code downloads historical daily price data for the GLD gold ETF
-from January 1, 2015, to today using Yahoo Finance. It d provides a preview along
-with the total number of rows downloaded.**
+#This code downloads historical daily price data for the GLD gold ETF
+#from January 1, 2015, to today using Yahoo Finance. It d provides a preview along
+#with the total number of rows downloaded.
 
 
-## Raw Data
+# Raw Data
 
 import yfinance as yf
 import pandas as pd
