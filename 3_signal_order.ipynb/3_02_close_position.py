@@ -1,6 +1,6 @@
 # CLose position
-Once the positions are open, in order to adjust the risk management of our strategy,
-we need to define an exit strategy to cut profits or losses.
+#Once the positions are open, in order to adjust the risk management of our strategy,
+#we need to define an exit strategy to cut profits or losses.
 
 
 # Exit long position when 10-day MA crosses below 50-day MA
