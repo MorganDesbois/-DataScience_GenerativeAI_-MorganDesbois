@@ -1,5 +1,5 @@
 # Moving Average 50 days 
-In this code, the objective is similar to the #moving_average_10 but this time we create the 50-day moving average still using "clean data"
+# In this code, the objective is similar to the #moving_average_10 but this time we create the 50-day moving average still using "clean data"
 
 
 ## Read cleaned CSV from Clean_Data
@@ -18,4 +18,4 @@ gold_data['50_day_MA'] = gold_data['Close'].rolling(window=50).mean()
 display(gold_data.head(15))
 
 
-**This code uses the cleaned gold price data from Clean_Data and calculates a 50-day moving average of the closing prices.**
+# This code uses the cleaned gold price data from Clean_Data and calculates a 50-day moving average of the closing prices. 
