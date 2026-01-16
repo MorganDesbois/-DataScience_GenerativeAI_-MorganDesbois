@@ -3,4 +3,4 @@
 trailing_stop_pct = 0.005  # 0.5% trailing distance
 trailing_stop_price = max(trailing_stop_price, current_price * (1 - trailing_stop_pct))
 
-** This protects profits automatically while letting winning trades grow **
+# This protects profits automatically while letting winning trades grow 
