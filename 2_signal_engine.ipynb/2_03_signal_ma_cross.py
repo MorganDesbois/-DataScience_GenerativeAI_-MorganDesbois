@@ -1,11 +1,11 @@
 # Generate Crossover signal: 10-day MA crosses 50-day MA 
 
 
-## Create a signal column
+# Create a signal column
 gold_data['Crossover_Signal'] = 0
 gold_data.loc[((gold_data['10_day_MA'] > gold_data['50_day_MA']) & (gold_data['10_day_MA'].shift(1) <= gold_data['50_day_MA'].shift(1))), 'Crossover_Signal'] = 1
 gold_data.loc[((gold_data['10_day_MA'] < gold_data['50_day_MA']) & (gold_data['10_day_MA'].shift(1) >= gold_data['50_day_MA'].shift(1))), 'Crossover_Signal'] = -1
 
 
-** We now created a new column with crossover signal: 1 for 10-day MA crossing above 50-day MA, -1 for crossing below, 0 otherwise **
+# We now created a new column with crossover signal: 1 for 10-day MA crossing above 50-day MA, -1 for crossing below, 0 otherwise 
 
